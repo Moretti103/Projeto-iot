@@ -75,6 +75,6 @@ No campo database, coloque "temperature" e salve.
 
 # Crie o dashboard de monitoração
 
-Para criar, utilize o arquivo json presente no repositório.
+Para criar, utilize o arquivo dashboard-grafana.json presente no repositório.
 
 
