@@ -32,6 +32,15 @@ import Adafruit_DHT as adht
 humidity,temperature = adht.read_retry(adht.DHT11, 4) 
 print( “humidity: {1:0.1f} and temperature: {1:0.1f} C”.format(humidity, temperature))
 
+# Utilizar o script Get-Metrics.py para coletar os dados e encaminhar para um arquivo. log que o telgraf utilizará para obter os dados e convertes para a base de dados do Influxdb
+
+
+Dados que devem aparecer no arquivo temperature.log
+
+1551010824.434111 Temp=24.0 C  and Humidity=72.0 % 
+1551010826.963109 Temp=24.0 C  and Humidity=72.3 % 
+1551010829.492004 Temp=24.0 C  and Humidity=72.5 % 
+1551010834.547388 Temp=24.0 C  and Humidity=72.6 % 
 
 # Instale o InfluxDb e o para tratar os dados dos logs de temperatura e umidade
 
